@@ -16,25 +16,24 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [12.x, 14.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Installing dependencies
-      run: npm install
-    - name: Running unit test
-      run: npm run test:unit
-    - name: Running 2e2 test
-      run: npm run test:e2e
-    - name: Building app
-      run: npm run build --if-present
-    - uses: actions/checkout@v2
-    - uses: akhileshns/heroku-deploy@v3.4.6 # This is the action
-      with:
-        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-        heroku_app_name: "react-marvel-ssr" #Must be unique in Heroku
-        heroku_email: "jorgefigueroa1897@gmail.com"
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Installing dependencies
+        run: npm install
+      - name: Running unit test
+        run: npm run test:unit
+      - name: Running 2e2 test
+        run: npm run test:e2e
+      - name: Building app
+        run: npm run build --if-present
+      - uses: akhileshns/heroku-deploy@v3.4.6 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "react-marvel-ssr" #Must be unique in Heroku
+          heroku_email: "jorgefigueroa1897@gmail.com"
