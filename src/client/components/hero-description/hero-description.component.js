@@ -7,7 +7,10 @@ const HeroDescription = ({description, onClose}) => {
                 <button
                     className='description__close'
                     onClick={onClose}
-                >close</button>
+                    data-cy='close-description'
+                >
+                    close
+                </button>
                 <p className='description__text'>
                     {description? description : 'No Description'}
                 </p>

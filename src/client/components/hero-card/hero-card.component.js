@@ -20,6 +20,7 @@ const HeroCard = ({name, thumbnail, modified, description}) => {
                 <div
                     className='hero-card__foreground'
                     onClick={()=> setHeroSelected(!heroSelected)}
+                    data-cy='hero-card'
                 >
                     <HeroImage thumbnail={cardThumbnail} />
                     <h2>{name}</h2>

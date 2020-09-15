@@ -11,6 +11,7 @@ const Searcher = ({onSearchChange}) => {
                 type='search'
                 placeholder='Search for your character'
                 onChange={onSearchChange}
+                data-cy='search'
             />
         </div>
     )
