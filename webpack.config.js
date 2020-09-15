@@ -30,11 +30,11 @@ module.exports = {
                 ],
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.styl$/,
                 use: [
                     { loader: 'style-loader'},
                     { loader: 'css-loader'},
-                    { loader: 'sass-loader'},
+                    { loader: 'stylus-loader'},
                 ],
             },
         ],

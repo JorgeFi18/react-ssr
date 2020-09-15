@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './hero-description.style.sass';
+import './hero-description.style.styl';
 
 const HeroDescription = ({description, onClose}) => {
     return  <div className='description'>

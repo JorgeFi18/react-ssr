@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './filter.style.sass';
+import './filter.style.styl';
 
 const Filter = ({filterBy, onFilterChange}) =>{
     return(

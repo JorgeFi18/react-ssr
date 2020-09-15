@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './header.style.sass';
+import './header.style.styl';
 
 const Header = () => {
     return <header className='header'>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './searcher.style.sass';
+import './searcher.style.styl';
 
 const Searcher = ({onSearchChange}) => {
     return(

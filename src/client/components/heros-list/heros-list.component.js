@@ -2,7 +2,7 @@ import React from 'react';
 
 import HeroCard from '../hero-card/hero-card.component';
 
-import './heros-list.style.sass';
+import './heros-list.style.styl';
 
 const HerosList = ({heros}) => {
     return(

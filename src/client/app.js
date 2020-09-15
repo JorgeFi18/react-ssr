@@ -7,7 +7,7 @@ import HerosList from './components/heros-list/heros-list.component';
 import Searcher from './components/searcher/searcher.component';
 import Filter from './components/filter/filter.component';
 
-import './app.sass';
+import './app.styl';
 
 const App = () => {
     const [heros, setHeros] = useState([]);

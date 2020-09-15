@@ -6,8 +6,9 @@
     "plugins": [
         "@babel/plugin-transform-runtime",
         ["css-modules-transform", {
-            "preprocessCss": "./sass.plugin.js",
-            "extensions": ["css", "scss", "sass"]
+            "preprocessCss": "./stylus-require-hook.js",
+            "extensions": ["css", "styl"]
         }]
-    ]
+    ],
+    "ignore": ["./stylus-require-hook.js"]
 }

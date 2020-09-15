@@ -4,7 +4,7 @@ import moment from 'moment';
 import HeroImage from '../hero-image/hero-image.component';
 import HeroDescription from '../hero-description/hero-description.component'
 
-import './hero-card.style.sass';
+import './hero-card.style.styl';
 
 const HeroCard = ({name, thumbnail, modified, description}) => {
     const [ heroSelected, setHeroSelected ] = useState(false);
