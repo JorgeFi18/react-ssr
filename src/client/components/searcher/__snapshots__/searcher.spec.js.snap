@@ -6,6 +6,7 @@ exports[`Searcher component Should match with snapshot 1`] = `
 >
   <input
     className="searcher__input"
+    data-cy="search"
     name="search"
     placeholder="Search for your character"
     type="search"

@@ -11,6 +11,7 @@ exports[`Filter component Should match with snapshot 1`] = `
   </p>
   <select
     className="filter__input"
+    data-cy="filter"
     value="name"
   >
     <option

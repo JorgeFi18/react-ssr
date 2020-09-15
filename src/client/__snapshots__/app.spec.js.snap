@@ -16,6 +16,7 @@ exports[`App component Should match with snapshot 1`] = `
   >
     <input
       className="searcher__input"
+      data-cy="search"
       name="search"
       onChange={[Function]}
       placeholder="Search for your character"
@@ -32,6 +33,7 @@ exports[`App component Should match with snapshot 1`] = `
     </p>
     <select
       className="filter__input"
+      data-cy="filter"
       onChange={[Function]}
       value="name"
     >
