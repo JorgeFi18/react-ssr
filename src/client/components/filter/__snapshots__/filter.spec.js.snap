@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter component Should match with snapshot 1`] = `
+<div
+  className="filter"
+>
+  <p
+    className="filter__label"
+  >
+    Filter by:
+  </p>
+  <select
+    className="filter__input"
+    value="name"
+  >
+    <option
+      value="name"
+    >
+      Name (ASC)
+    </option>
+    <option
+      value="modified"
+    >
+      Date (ASC)
+    </option>
+    <option
+      value="-name"
+    >
+      Name (DESC)
+    </option>
+    <option
+      value="-modified"
+    >
+      Date (DESC)
+    </option>
+  </select>
+</div>
+`;

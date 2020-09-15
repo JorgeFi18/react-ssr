@@ -1,0 +1,13 @@
+{
+    "presets": [
+        "@babel/preset-react",
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime",
+        ["css-modules-transform", {
+            "preprocessCss": "./sass.plugin.js",
+            "extensions": ["css", "scss", "sass"]
+        }]
+    ]
+}

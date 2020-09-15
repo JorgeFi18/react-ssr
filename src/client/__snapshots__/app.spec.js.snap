@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component Should match with snapshot 1`] = `
+<div>
+  <header
+    className="header"
+  >
+    <figure
+      className="header__logo"
+    >
+      Marvel Api
+    </figure>
+  </header>
+  <div
+    className="searcher"
+  >
+    <input
+      className="searcher__input"
+      name="search"
+      onChange={[Function]}
+      placeholder="Search for your character"
+      type="search"
+    />
+  </div>
+  <div
+    className="filter"
+  >
+    <p
+      className="filter__label"
+    >
+      Filter by:
+    </p>
+    <select
+      className="filter__input"
+      onChange={[Function]}
+      value="name"
+    >
+      <option
+        value="name"
+      >
+        Name (ASC)
+      </option>
+      <option
+        value="modified"
+      >
+        Date (ASC)
+      </option>
+      <option
+        value="-name"
+      >
+        Name (DESC)
+      </option>
+      <option
+        value="-modified"
+      >
+        Date (DESC)
+      </option>
+    </select>
+  </div>
+  <div
+    className="heros-list"
+  />
+</div>
+`;

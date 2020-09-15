@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero Image component Should match with snapshot 1`] = `
+<img
+  alt="hero"
+  className="hero-card__image"
+  src="path/to/my-image"
+/>
+`;

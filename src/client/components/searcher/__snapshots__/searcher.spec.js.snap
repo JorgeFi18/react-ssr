@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searcher component Should match with snapshot 1`] = `
+<div
+  className="searcher"
+>
+  <input
+    className="searcher__input"
+    name="search"
+    placeholder="Search for your character"
+    type="search"
+  />
+</div>
+`;
