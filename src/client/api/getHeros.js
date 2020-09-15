@@ -8,7 +8,6 @@ const getHeros = async (orderBy) => {
             orderBy
         }
     });
-    console.log(resp.data.results);
     return resp.data.results;
 }
 

@@ -1,3 +1,9 @@
 {
-    "testRegex": "((\\.|/*.)(spec))\\.js?$"
+    "testRegex": "((\\.|/*.)(spec))\\.js?$",
+    "collectCoverageFrom": [
+        "**/*.{js,jsx}",
+        "!**/node_modules/**",
+        "!**/vendor/**"
+    ],
+    "coverageReporters": ["text-summary"] 
 }

@@ -22,12 +22,10 @@ const App = () => {
     }, []);
 
     const handleSearch = (e) => {
-        console.log(e.target.value);
         setSearch(e.target.value);
     }
 
     const handleFilter = async (e) => {
-        console.log(e.target.value);
         setFilterBy(e.target.value);
         const newHeros = await getHeros(e.target.value);
         setHeros(newHeros);
