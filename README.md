@@ -73,6 +73,9 @@ npm run dev
 
 # Run unit test suites
 npm run test:unit
+
+# Run e2e tests
+npm run test:e2e
 ```
 
 ## References
@@ -83,3 +86,4 @@ npm run test:unit
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
 - [Jest](https://jestjs.io/docs/en/getting-started)
+- [Cypress](https://www.cypress.io/)
