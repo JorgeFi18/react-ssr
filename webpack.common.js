@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
     context: path.resolve(__dirname, 'src/client'),
     entry: {
-        app: 'index.js',
+        app: './index.js',
     },
     output: {
         publicPath: '/',

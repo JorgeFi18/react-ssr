@@ -12,8 +12,10 @@
     "dev:server": "nodemon --exec babel-node src/server/index.js",
     "dev": "npm-run-all --parallel dev:client dev:server",
     "cy:run": "cypress run --headed",
+    "cy:open": "cypress open",
     "test:unit": "jest --config ./jest.config.json",
     "test:e2e": "start-server-and-test dev :3000 cy:run",
+    "test:locale2e": "start-server-and-test dev :3000 cy:open",
     "heroku-prebuild": "npm install --dev"
   },
   "author": "jfigueroa",
