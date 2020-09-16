@@ -7,7 +7,7 @@
     "build:client": "webpack --config webpack.prod.js",
     "build:server": "babel src --out-dir dist",
     "build": "npm run build:client && npm run build:server",
-    "start": "node ./dist/server/index.js",
+    "start": "node /app/dist/server/index.js",
     "dev:client": "webpack --watch --config webpack.dev.js",
     "dev:server": "nodemon --exec babel-node src/server/index.js",
     "dev": "npm-run-all --parallel dev:client dev:server",
