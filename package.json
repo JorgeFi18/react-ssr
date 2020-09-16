@@ -4,11 +4,11 @@
   "description": "SSR react app",
   "main": "index.js",
   "scripts": {
-    "build:client": "webpack",
+    "build:client": "webpack --config webpack.prod.js",
     "build:server": "babel src --out-dir dist",
     "build": "npm run build:client && npm run build:server",
     "start": "node ./dist/server/index.js",
-    "dev:client": "webpack --watch",
+    "dev:client": "webpack --watch --config webpack.dev.js",
     "dev:server": "nodemon --exec babel-node src/server/index.js",
     "dev": "npm-run-all --parallel dev:client dev:server",
     "cy:run": "cypress run --headed",
@@ -38,7 +38,8 @@
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.1.4"
   },
   "dependencies": {
     "axios": "^0.20.0",
